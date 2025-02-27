@@ -1,0 +1,9 @@
+[package]
+name = "dbconnect"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+sqlx = { version = "0.5.9", features = [ "runtime-async-std-native-tls", "sqlite" ] }
+async-std = {version = "1.6.0-beta.2", features = [ "attributes" ] }
+futures = "0.3.18" 
